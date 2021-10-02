@@ -22,14 +22,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
   }
   
   header h1 {
@@ -81,7 +73,7 @@
   
   footer h2 {
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 16px;
     margin: 0;
   }
   
@@ -94,12 +86,10 @@
     color: var(--secondary-color);
   }
   
-  section {
-    padding: 60px;
+  #about-me, #my-work, #contact-me {
+    width: 80%;
+    margin: 15px auto;
   }
-  
-
-
 
   .hero {
     background-image: url("./imgs/IMG_6071.png");
@@ -107,24 +97,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-  }
-  .hero-form {
-    border: 3px solid var(--primary-color);
-    background-color:var(--secondary-color);
-    padding: 20px;
-    width: 500px;
-    color: var(--primary-color);
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
-  }
-  
-  .hero-form h3 {
-    font-size: 24px;
-    margin: 0;
-  }
-  .hero-form p {
-    margin: 5px 0 15px 0;
   }
   
   .section-title {
@@ -134,7 +106,6 @@
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
-    width: 50%;
   }
 .intro p {
      text-align: center;
@@ -145,11 +116,19 @@
 
 
  .main-project {
+   display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
+
+.main-project a {
+width: 70%;
+
+}
+
  .main-project img {
-    width: 70%;
+    width: 100%;
     height: 10%;
     flex-wrap: wrap; 
     
@@ -157,6 +136,9 @@
  
  .work {
      display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
    }
  .work img {
      padding: 10px 10px 10px 10px;
@@ -167,6 +149,22 @@
     height: 420px;
     width: 320px;
 }
- {
+
+.project-bio {
+    align-items: center;
+
+}
+a {
+    align-items: center;
+}
+h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+.main-project img {
+    padding: 10px 10px 10px 10px;
+    width: 240px;
+}
 
 }
