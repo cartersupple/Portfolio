@@ -98,6 +98,9 @@
     padding: 60px;
   }
   
+
+
+
   .hero {
     background-image: url("./imgs/IMG_6071.png");
     height: 600px;
@@ -139,7 +142,9 @@
      font-size: 22px;
      margin-bottom: 15px;   
  }
-.main-project {
+
+
+ .main-project {
     align-items: center;
     justify-content: center;
 }
@@ -152,16 +157,16 @@
  
  .work {
      display: flex;
-     flex-wrap: wrap; 
-     margin: auto;
-     width: 50%;
-     border: 3px solid green;
-     padding: 10px;
    }
  .work img {
      padding: 10px 10px 10px 10px;
-     margin-left: auto;
-     margin-right: auto;
-    
+    width: 240px;
+}
  }
+.img {
+    height: 420px;
+    width: 320px;
+}
+ {
 
+}
